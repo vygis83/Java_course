@@ -6,7 +6,18 @@ public class Main {
         char myChar = '\u00A9';
         System.out.println(myChar);
 
-        boolean myBool = true;
+        String myString = "This is my string!";
+        System.out.println(myString);
+        myString = myString + " " + myChar;
+        System.out.println(myString);
+
+        String lastString = "10";
+        int myInt = 50;
+        lastString = lastString + myInt;
+        System.out.println("The result is " + lastString);
+        double doubleNumber = 120.45;
+        lastString = lastString + doubleNumber;
+        System.out.println("The result is " + lastString);
 
         //Challenge
 
