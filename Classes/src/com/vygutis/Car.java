@@ -11,35 +11,11 @@ public class Car {
     private String engine;
     private String color;
 
-    public int getDoors() {
-        return doors;
-    }
-
-    public void setDoors(int doors) {
+    public Car(int doors, int wheels, String model, String engine, String color) {
         this.doors = doors;
-    }
-
-    public int getWheels() {
-        return wheels;
-    }
-
-    public void setWheels(int wheels) {
         this.wheels = wheels;
-    }
-
-    public String getEngine() {
-        return engine;
-    }
-
-    public void setEngine(String engine) {
+        this.model = model;
         this.engine = engine;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
         this.color = color;
     }
 
