@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="267ce3bd-3001-4c45-89f8-9b9e3feb9340" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Classes/com/vygutis/Car.class" afterPath="$PROJECT_DIR$/out/production/Classes/com/vygutis/Car.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Classes/com/vygutis/Main.class" afterPath="$PROJECT_DIR$/out/production/Classes/com/vygutis/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Classes.iws" />
@@ -471,7 +471,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448887192003</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Monday">
+      <created>1448887208726</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1448887208726</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
