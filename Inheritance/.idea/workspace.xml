@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f154fa9-8119-4705-8698-f8d55ec312f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vygutis/Car.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vygutis/Vehicle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vygutis/Volvo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Inheritance/com/vygutis/Main.class" afterPath="$PROJECT_DIR$/out/production/Inheritance/com/vygutis/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vygutis/Fish.java" afterPath="$PROJECT_DIR$/src/com/vygutis/Fish.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vygutis/Main.java" afterPath="$PROJECT_DIR$/src/com/vygutis/Main.java" />
     </list>
     <ignored path="Inheritance.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -493,7 +488,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448899964889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tuesday">
+      <created>1448974715910</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1448974715910</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -529,7 +530,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inheritance" />
+    <MESSAGE value="Tuesday" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tuesday" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
