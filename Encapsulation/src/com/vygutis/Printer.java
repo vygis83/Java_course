@@ -29,7 +29,7 @@ public class Printer {
     public void print(int sheets) {
         if(this.isDuplex) {
             this.pages += (sheets+1)/2;
-        }else{
+        } else {
             this.pages += sheets;
         }
     }

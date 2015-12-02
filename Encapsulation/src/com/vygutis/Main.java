@@ -25,5 +25,7 @@ public class Main {
         System.out.println("Pages printed: " + printer.getPages());
         printer.print(103);
         System.out.println("Pages printed: " + printer.getPages());
+        printer.fillToner(20);
+        printer.fillToner(20);
     }
 }
