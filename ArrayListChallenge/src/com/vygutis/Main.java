@@ -60,7 +60,6 @@ public class Main {
         System.out.println("Please enter phone number: ");
         String number = scanner.nextLine();
         Contact entry = Contact.createContact(name, number);
-        myContacts.addContact(entry);
         if(myContacts.addContact(entry)) {
             System.out.println("New contact added: name = " + name + ", phone = " + number);
         } else {
@@ -86,6 +85,10 @@ public class Main {
         System.out.println("Enter contact name to remove: ");
         String name = scanner.nextLine();
         Contact entry = myContacts.queryContact(name);
+        if(entry == null) {
+            System.out.println("Contact not found.");
+            return;
+        }
         myContacts.removeContact(entry);
     }
     private static void query() {
