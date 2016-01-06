@@ -4,6 +4,7 @@ package com.vygutis;
  * Created by Vygis on 05/01/2016.
  */
 public class Node extends ListItem {
+
     public Node(Object value) {
         super(value);
     }

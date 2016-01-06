@@ -24,23 +24,19 @@ public class MyLinkedList implements NodeList {
         ListItem currentItem = this.root;
         while (currentItem != null) {
             int compare = (currentItem.compareTo(item));
-            if(compare <0) {
+            if(compare <0) {                                //new item is greater
                 if(currentItem.next() != null) {
                     currentItem = currentItem.next();
                 } else {
-                    currentItem.setNext(item);
-                    item.setPrevious(currentItem);
+                    currentItem.setNext(item).setPrevious(currentItem);
                     return true;
                 }
-            } else if(compare >0) {
+            } else if(compare >0) {                         //new item is less
                 if(currentItem.previous() != null) {
-                    currentItem.previous().setNext(item);
-                    item.setPrevious(currentItem.previous());
-                    item.setNext(currentItem);
-                    currentItem.setPrevious(item);
+                    currentItem.previous().setNext(item).setPrevious(currentItem.previous());
+                    item.setNext(currentItem).setPrevious(item);
                 } else {
-                    item.setNext(this.root);
-                    this.root.setPrevious(item);
+                    item.setNext(this.root).setPrevious(item);
                     this.root = item;
                 }
                 return true;
@@ -54,11 +50,41 @@ public class MyLinkedList implements NodeList {
 
     @Override
     public boolean removeItem(ListItem item) {
+        if(item != null) {
+            System.out.println("Deleting item " + item.getValue());
+        }
+        ListItem currentItem = this.root;
+        while (currentItem != null) {
+            int compare = (currentItem.compareTo(item));
+            if (compare == 0) {
+                if(currentItem == this.root) {
+                    this.root = currentItem.next();
+                } else {
+                    currentItem.previous().setNext(currentItem.next());
+                    if(currentItem.next() != null) {
+                        currentItem.next().setPrevious(currentItem.previous());
+                    }
+                }
+                return true;
+            } else if(compare <0) {
+                currentItem = currentItem.next();
+            } else {
+                System.out.println(item.getValue() + " is not in the list");
+                return false;
+            }
+        }
         return false;
     }
 
     @Override
     public void traverse(ListItem root) {
-
+        if(root == null) {
+            System.out.println("The list is empty");
+        } else {
+            while (root != null) {
+                System.out.println(root.getValue());
+                root = root.next();
+            }
+        }
     }
 }
