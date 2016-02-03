@@ -22,13 +22,20 @@ public class Main {
         solarSystem.put(temp.getName(), temp);
         planets.add(temp);
 
+        temp = new AstroObject("Mars", 687);
+        solarSystem.put(temp.getName(), temp);
+        planets.add(temp);
+
         AstroObject tempMoon = new AstroObject("Moon", 27);
         solarSystem.put(tempMoon.getName(), tempMoon);
         temp.addMoon(tempMoon);
 
+        AstroObject earth = new AstroObject("Earth", 1000);
+        planets.add(earth);
+
         System.out.println("Planets");
         for(AstroObject planet : planets) {
-            System.out.println("\t" + planet.getName());
+            System.out.println("\t" + planet.getName() + ": " + planet.getOrbitalPeriod());
         }
 
         AstroObject body = solarSystem.get("Earth");
